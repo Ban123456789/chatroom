@@ -1,5 +1,14 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import '@/assets/scss/all.scss'
+import VueCookies from 'vue-cookies'
 
-createApp(App).use(router).mount('#app')
+const app = createApp(App)
+
+app.config.globalProperties.$cookies = {
+    VueCookies
+}
+
+app.use(router)
+app.mount('#app')

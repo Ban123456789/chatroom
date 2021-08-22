@@ -1,0 +1,8 @@
+// 引入 bootstrap scss 除第二行改自己設定的 variables
+@import "~bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/bootstrap";
+
+// 引入自訂義的 scss
+@import "./helpers/client"
