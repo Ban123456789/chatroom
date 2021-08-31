@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import collepseProblem from '../components/WorkTest/collepseProblem.vue'
 import checkboxProblem from '../components/WorkTest/checkboxProblem.vue'
 import selectProblem from '../components/WorkTest/selectProblem.vue'
+import validate from '../components/WorkTest/validate.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/selectProblem',
     name: 'selectProblem',
     component: selectProblem
+  },
+  {
+    path: '/validate',
+    name: 'validate',
+    component: validate
   },
 ]
 
