@@ -1,3 +1,5 @@
+// 這份檔案要上傳 git 變成 git push -u origin main
+
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'

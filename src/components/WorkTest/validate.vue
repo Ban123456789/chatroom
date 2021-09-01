@@ -30,6 +30,32 @@
         ></Field>
         <error-message name="password" class="invalid-feedback"></error-message>
 
+        <Field
+          id="name"
+          name="地區"
+          class="form-control"
+          :class="{ 'is-invalid': errors['地區'] }"
+          placeholder="請輸入地區"
+          rules="required"
+          v-model="user.region"
+          as="select"
+        >
+          <option value="">請選擇地區</option>
+          <option value="台北市">台北市</option>
+          <option value="高雄市">高雄市</option>
+        </Field>
+        <error-message name="地區" class="invalid-feedback"></error-message>
+
+        <Field name="飲料" type="checkbox" value="Water" rules="required"></Field> Water
+        <Field name="飲料" type="checkbox" value="Tea" rules="required"></Field> Tea
+        <Field name="飲料" type="checkbox" value="Coffee" rules="required"></Field> Coffee
+        <error-message name="飲料" class="invalid-feedback"></error-message>
+
+        <Field name="飲料" type="radio" value="Water" rules="required"></Field> Water
+        <Field name="飲料" type="radio" value="Tea" rules="required"></Field> Tea
+        <Field name="飲料" type="radio" value="Coffee" rules="required"></Field> Coffee
+        <error-message name="飲料" class="invalid-feedback"></error-message>
+
         <!-- 自訂規則 -->
         <Field
           id="phone"
