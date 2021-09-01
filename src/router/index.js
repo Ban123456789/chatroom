@@ -4,6 +4,7 @@ import collepseProblem from '../components/WorkTest/collepseProblem.vue'
 import checkboxProblem from '../components/WorkTest/checkboxProblem.vue'
 import selectProblem from '../components/WorkTest/selectProblem.vue'
 import validate from '../components/WorkTest/validate.vue'
+import bootstrapModal from '../components/WorkTest/bootstrapModal.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/validate',
     name: 'validate',
     component: validate
+  },
+  {
+    path: '/bootstrapModal',
+    name: 'bootstrapModal',
+    component: bootstrapModal
   },
 ]
 
