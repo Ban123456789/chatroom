@@ -6,13 +6,16 @@ import router from './router'
 import '@/assets/scss/all.scss'
 import VueCookies from 'vue-cookies'
 // 引入 vee-validate 主套件
-import {Field, Form, ErrorMessage, defineRule, configure} from 'vee-validate'
+import { Field, Form, ErrorMessage, defineRule, configure } from 'vee-validate'
 // 引入 vee-validate 相關規則
 import { required, email, min } from '@vee-validate/rules'
 // 引入 vee-validate 多國語系
 import { localize, setLocale } from '@vee-validate/i18n'
 // 匯入 中文包
 import zhTW from '@vee-validate/i18n/dist/locale/zh_TW.json';
+//引入axios
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 // 定義驗證規則
 defineRule('required', required);
@@ -40,4 +43,5 @@ app.config.globalProperties.$cookies = {
 }
 
 app.use(router)
+app.use(VueAxios, axios)
 app.mount('#app')

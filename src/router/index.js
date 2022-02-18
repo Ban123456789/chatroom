@@ -5,6 +5,8 @@ import checkboxProblem from '../components/WorkTest/checkboxProblem.vue'
 import selectProblem from '../components/WorkTest/selectProblem.vue'
 import validate from '../components/WorkTest/validate.vue'
 import bootstrapModal from '../components/WorkTest/bootstrapModal.vue'
+// 測試路由
+import Test from '../components/Test.vue'
 
 const routes = [
   {
@@ -36,6 +38,11 @@ const routes = [
     path: '/bootstrapModal',
     name: 'bootstrapModal',
     component: bootstrapModal
+  },
+  {
+    path: '/test/:id',
+    name: 'Test',
+    component: Test
   },
 ]
 
